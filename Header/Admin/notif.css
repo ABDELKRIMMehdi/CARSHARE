@@ -1,0 +1,633 @@
+#notifications {
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    /*background: white;*/
+}
+
+/*un trajet supprimer*/
+
+#notifications .notification {
+    background: white;
+    /* border-bottom: darkgray;
+    box-shadow: (0px 1px 0px black);*/
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 225px;
+    width: 100%;
+    border-bottom: 1px solid rgb(73, 70, 69);
+}
+
+.notification #right {
+    position: relative;
+    left: 6%;
+    right: 0%;
+    /* margin-top: 0%;*/
+    /* margin-left: 70px;*/
+}
+
+.notification #left {
+    /* background-color: rgb(148, 91, 16);*/
+    position: relative;
+    /* padding: 0 10px;*/
+    /*  height: 100%;
+    width: 30px;*/
+    top: 17%;
+    left: 0%;
+    right: 0%;
+}
+
+.cancelride #start {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cancelride #arival {
+    top: 20%;
+    left: 0%;
+    font-weight: bolder;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cancelride #date {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cancelride #heure {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cancelride #para1 {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: rgb(156, 10, 10);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.notification #left .fa-minus-circle {
+    color: red;
+}
+
+.notification .right #daySend {
+    position: relative;
+    top: 0%;
+    left: 75%;
+    right: 0%;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*Participation Annuler*/
+
+#notifications .notificationP {
+    background: white;
+    /* border-bottom: darkgray;
+    box-shadow: (0px 1px 0px black);*/
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 225px;
+    width: 100%;
+    border-bottom: 1px solid rgb(73, 70, 69);
+    
+}
+#notifications .notificationP #daysent{
+    position: relative;
+    left: 30%;
+    font-weight: bold;
+}
+
+.notificationP #rightP {
+    position: relative;
+    left: 6%;
+    right: 0%;
+}
+
+.notificationP #leftP {
+    /* background-color: rgb(148, 91, 16);*/
+    position: relative;
+    top: 17%;
+    left: 0%;
+    right: 0%;
+}
+
+.cancelparticipation #nom {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cancelparticipation #prenom {
+    top: 20%;
+    left: 0%;
+    font-weight: bolder;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cancelparticipation #para2 {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cancelparticipation #depart1 {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cancelparticipation #arrival2 {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cancelparticipation #date2 {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.notificationP #leftP .fa-user-minus {
+    color: red;
+}
+
+.notificationP .rightP #daySend2 {
+    position: relative;
+    top: 0%;
+    left: 75%;
+    right: 0%;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*join*/
+
+#notifications .notificationJ {
+    background: white;
+    /* border-bottom: darkgray;
+    box-shadow: (0px 1px 0px black);*/
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 225px;
+    width: 100%;
+    border-bottom: 1px solid rgb(73, 70, 69);
+}
+
+.notificationJ #rightJ {
+    position: relative;
+    left: 6%;
+    right: 0%;
+    /*position: relative;
+    left: 6%;
+    right: 0%;
+    top: -30%;
+     margin-top: 0%;
+    margin-left: 70px;*/
+}
+
+.notificationJ #leftJ {
+    /* background-color: rgb(148, 91, 16);*/
+    position: relative;
+    /* padding: 0 10px;*/
+    /*  height: 100%;
+    width: 30px;*/
+    top: 17%;
+    left: 0%;
+    right: 0%;
+}
+
+.join #nomJ {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.join #prenomJ {
+    top: 20%;
+    left: 0%;
+    font-weight: bolder;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.join #para3 {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: rgb(9, 153, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.join #departJ {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.join #arrivalJ {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.join #dateJ {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.notificationJ #leftJ .fa-user-plus {
+    color: rgb(22, 60, 143);
+}
+
+.notificationJ .rightJ #daySend3 {
+    position: relative;
+    top: 0%;
+    left: 75%;
+    right: 0%;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*Bann*/
+
+#notifications .notificationB {
+    background: white;
+    /* border-bottom: darkgray;
+    box-shadow: (0px 1px 0px black);*/
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 225px;
+    width: 100%;
+    border-bottom: 1px solid rgb(73, 70, 69);
+}
+
+.notificationB #rightB {
+    position: relative;
+    left: 6%;
+    right: 0%;
+    /* margin-top: 0%;*/
+    /* margin-left: 70px;*/
+}
+
+.notificationB #leftB {
+    /* background-color: rgb(148, 91, 16);*/
+    position: relative;
+    /* padding: 0 10px;*/
+    /*  height: 100%;
+    width: 30px;*/
+    top: 17%;
+    left: 0%;
+    right: 0%;
+}
+
+.bann #para4 {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: rgb(207, 100, 12);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bann #departB {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bann #arrivalB {
+    top: 20%;
+    left: 0%;
+    font-weight: bolder;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bann #dateB {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bann #heureB {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.notificationB #leftB .fa-ban {
+    color: red;
+}
+
+.notificationB .rightB #daySend4 {
+    position: relative;
+    top: 0%;
+    left: 75%;
+    right: 0%;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*messagerie*/
+
+#notifications .notificationM {
+    background: white;
+    /* border-bottom: darkgray;
+    box-shadow: (0px 1px 0px black);*/
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgb(73, 70, 69);
+    overflow-wrap: break-word;
+}
+
+.notificationM .rightM {
+    position: relative;
+    left: 6%;
+    right: 0%;
+    height: 200px;
+    /* margin-top: 0%;*/
+    /* margin-left: 70px;*/
+}
+
+.notificationM #leftM {
+    /* background-color: rgb(148, 91, 16);*/
+    position: relative;
+    padding: 0 10px;
+    width: 50px;
+    top: 30px;
+    left: 0%;
+    right: 0%;
+}
+
+.notificationM .rightM #fname {
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.notificationM .rightM #lname {
+    top: 20%;
+    left: 0%;
+    font-weight: bolder;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mail #par {
+    height: 145px;
+    width: 70%;
+    top: 5%;
+    left: 0%;
+    font-weight: bold;
+    color: rgb(10, 8, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: auto;
+}
+
+.notificationM #leftM .fa-envelope-open {
+    color: rgb(7, 116, 16);
+}
+
+.notificationM .rightM #daySend5 {
+    position: relative;
+    bottom: 10%;
+    left: 78%;
+    right: 0%;
+    font-weight: bold;
+    color: black;
+}
+@media (max-width : 1150px) {
+    .notificationM #leftM {
+        left: 80% !important;
+    }
+}
+
+@media (max-width : 1150px) {
+    #leftB {
+        left: 80% !important;
+    } 
+}
+@media (max-width : 1150px) {
+    #leftJ {
+        left: 80% !important;
+    }
+}
+@media (max-width : 1150px) {
+    #leftP {
+        left: 80% !important;
+    } 
+}
+@media (max-width : 1150px) {
+    #left {
+        left: 80% !important;
+    }
+}
+
+
+
+/*.notificationM .rightM #buttonReply {
+    position: relative;
+    top: 0%;
+    left: 75%;
+    right: 0%;
+    font-weight: bold;
+    color: rgb(11, 34, 139);
+}*/
+
+.notificationM  #Button {
+    position: relative;
+    left: 65%;
+    display: inline;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    height: 40px;
+    width: 25%;
+    top: -70px;
+}
+
+.notificationM  #buttonReply {
+    font-size: calc(10px + 1vw);
+    font-weight: 500;
+    display: inline;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #8bc7e9c5;
+    border-radius: 15px;
+    background-color: #42a0cc;
+}
+
+.notificationM #buttonReply:hover {
+    -webkit-box-shadow: 1px 1px 25px 10px #5cb9f7d7;
+    box-shadow: 1px 1px 25px 10px #5cb9f7d7;
+}
+
+.notificationM #buttonReply:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -110%;
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(120deg, transparent, #b9dff89d, transparent);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.notificationM #buttonReply:hover:before {
+    left: 110%;
+}
+
+.hover_bkgr_friccREP {
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    display: none;
+    height: 100vw;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    z-index: 10000;
+  }
+  
+  .hover_bkgr_friccREP .helperREP {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .hover_bkgr_friccREP > div {
+    background-color: #fff;
+    -webkit-box-shadow: 10px 10px 60px #555;
+            box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+  }
+  
+  .popupCloseButtonREP {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .popupCloseButtonREP:hover {
+    background-color: #ccc;
+  }
+  
+  .trigger_popup_friccREP {
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  #sendRep{
+      outline: none;
+      height: 50px;
+      color: white;
+      border: 1px solid #8bc7e9c5;
+    border-radius: 15px;
+    background-color: #42a0cc;
+  }
+  #sendRep:hover{
+    -webkit-box-shadow: 1px 1px 25px 10px #5cb9f7d7;
+    box-shadow: 1px 1px 25px 10px #5cb9f7d7;
+  }
+  .notificationM  .daysent{
+display: none !important;
+}
+  .daysent{
+    position: relative;
+    left: 39%;
+    font-weight: bold;
+}
+@media (max-width : 1150px) {
+    #daysent {
+        left : -53%!important;
+        top : 25px!important;
+    }
+    .daysent {
+        left : -41%!important;
+        top : 25px!important;
+    }
+    
+}

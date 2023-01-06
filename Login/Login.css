@@ -1,0 +1,277 @@
+html {
+  background: url("images/logbg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  height: 100vh;
+}
+
+#Box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#backPanel {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+#Logo {
+  margin-top: 25px;
+  margin-left: 20px;
+  height: 90px;
+  width: 225px;
+  background: url("images/Logo.png") no-repeat;
+  background-size: cover;
+}
+
+#Description h1 {
+  margin-left: 15px;
+  color: white;
+  text-shadow: 2px 0 rgba(0, 0, 0, 0.767), -2px 0 rgba(0, 0, 0, 0.767), 0 2px rgba(0, 0, 0, 0.767), 0 -2px rgba(0, 0, 0, 0.767), 1px 1px rgba(0, 0, 0, 0.767), -1px -1px rgba(0, 0, 0, 0.767), -1px 1px rgba(0, 0, 0, 0.767), 1px -1px rgba(0, 0, 0, 0.767);
+  font-size: 4.5rem;
+}
+
+#Description p {
+  margin-left: 15px;
+  color: white;
+  text-shadow: 2px 0 rgba(0, 0, 0, 0.767), -2px 0 rgba(0, 0, 0, 0.767), 0 2px rgba(0, 0, 0, 0.767), 0 -2px rgba(0, 0, 0, 0.767), 1px 1px rgba(0, 0, 0, 0.767), -1px -1px rgba(0, 0, 0, 0.767), -1px 1px rgba(0, 0, 0, 0.767), 1px -1px rgba(0, 0, 0, 0.767);
+  font-size: 2rem;
+}
+
+#SignInFormBox {
+  margin-right: 56px;
+  margin-top: 40px;
+  width: 27%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  float: right;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.678)), to(white));
+  background: linear-gradient(rgba(255, 255, 255, 0.678), white);
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0.651)));
+  border-radius: 10px;
+}
+
+#SignInForm {
+  position: relative;
+  padding-left: 45px;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+  width: 70%;
+}
+
+#h1wrap h1 {
+  border: 0;
+  border-bottom: solid;
+  border-width: 3px;
+  -webkit-border-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 1%, #3494e2 50%, rgba(0, 0, 0, 0) 100%) 0 0 100% 0/0 0 3px 0 stretch;
+  border-image-slice: 1;
+}
+
+#h1wrap {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#SignInForm_p {
+  font-weight: 200;
+  font-size: 1.15rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0c5fcc;
+  font-weight: 600;
+}
+
+.form_field {
+  width: 100%;
+  border: 0;
+  margin-bottom: 40px;
+  outline: 0;
+  border-bottom: 3px solid black;
+  font-size: 1.5rem;
+  color: black;
+  background: transparent;
+}
+
+.form_field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form_field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form_field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form_field::placeholder {
+  color: transparent;
+}
+
+.form_field:placeholder-shown ~ .form__label {
+  font-size: 1.5rem;
+  cursor: text;
+}
+
+#EM {
+  position: relative;
+  margin: 45px 0px;
+}
+
+#pass {
+  position: relative;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.form_field:focus, .form_field:valid {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 2px;
+  -o-border-image: linear-gradient(to right, #113599, #3bcaee);
+     border-image: -webkit-gradient(linear, left top, right top, from(#113599), to(#3bcaee));
+     border-image: linear-gradient(to right, #113599, #3bcaee);
+  border-image-slice: 1;
+}
+
+.form_field:focus ~ .form__label, .form_field:valid ~ .form__label {
+  -webkit-transform: translateX(-10px) translateY(-32px);
+          transform: translateX(-10px) translateY(-32px);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #115799;
+}
+
+.form_field:required, .form_field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#keepmeloggedinContainer {
+  width: 100%;
+}
+
+#check {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+#customCheckMark {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#customCheckMark #checkMark {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #222;
+  border-radius: 2px;
+  background: #2985c2 url("images/checkmark.png") center/3000% no-repeat;
+  -webkit-transition: background-size 0.2s cubic-bezier(0.75, -0.2, 0.25, 1.24);
+  transition: background-size 0.2s cubic-bezier(0.75, -0.2, 0.25, 1.24);
+}
+
+#customCheckMark #checkbox:checked + #checkMark {
+  background-size: 90%;
+  border-color: #298ac2;
+  -webkit-transition: background-size 0.5s cubic-bezier(0.75, -0.2, 0.25, 1.24);
+  transition: background-size 0.5s cubic-bezier(0.75, -0.2, 0.25, 1.24);
+}
+
+#customCheckMark input {
+  display: none;
+}
+
+#text {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: .3px;
+}
+
+#ButtonContainer {
+  display: block;
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: block;
+  height: 55px;
+  width: 100%;
+}
+
+#SubmitButton {
+  font-size: 1.5rem;
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #8bc7e9c5;
+  border-radius: 15px;
+  background-color: #2992c2;
+}
+
+#SubmitButton:hover {
+  -webkit-box-shadow: 1px 1px 25px 10px #319fe78e;
+          box-shadow: 1px 1px 25px 10px #319fe78e;
+}
+
+#SubmitButton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -110%;
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(120deg, transparent, #b9dff89d, transparent);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+#SubmitButton:hover:before {
+  left: 110%;
+}
+
+p.probleme {
+  color: red !important;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1000px) {
+  #SignInFormBox {
+    position: relative !important;
+    left: -10% !important;
+    width: 60%;
+  }
+  #backPanel {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Login.css.map */

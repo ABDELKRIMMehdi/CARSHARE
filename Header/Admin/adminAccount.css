@@ -1,0 +1,319 @@
+* {
+  font-family: 'museo-sans-rounded',sans-serif;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  color: #1a1b1c;
+}
+
+label, a {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-decoration: none;
+  display: inline;
+  color: inherit;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+  padding: 3px 2px;
+}
+
+.layout {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  -ms-grid-rows: 50px 1fr;
+      grid-template-rows: 50px 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-bottom: 2px solid #6bb4f0;
+  background: #ecf0f1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background 0.4s, padding-left 0.2s;
+  transition: background 0.4s, padding-left 0.2s;
+  padding-left: 0;
+}
+
+input[type="radio"]:checked + .page + label.nav {
+  background: #3494e2;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+input[type="radio"]:checked + .page + label.nav span {
+  padding-left: 20px;
+}
+
+input[type="radio"]:checked + .page + label.nav svg {
+  opacity: 1;
+}
+
+label.nav span {
+  padding-left: 0px;
+  position: relative;
+}
+
+label.nav svg {
+  left: 0;
+  top: -3px;
+  position: absolute;
+  width: 15px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.page {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column-span: 3;
+      grid-column-end: span 3;
+  display: inline;
+}
+
+.page-contents > * {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.page-contents > *:nth-child(1) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.page-contents > *:nth-child(2) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+input[type="radio"] + .page {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+input[type="radio"]:checked + .page {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+input[type="radio"]:checked + .page .page-contents > * {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.page-contents {
+  max-width: 100%;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-contents h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0;
+  border-bottom: solid;
+  border-width: 3px;
+  -webkit-border-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 1%, #3494e2 50%, rgba(0, 0, 0, 0) 100%) 0 0 100% 0/0 0 3px 0 stretch;
+  border-image-slice: 1;
+  margin-bottom: 50px;
+  margin-inline: auto;
+}
+
+.page-contents div {
+  text-align: center;
+  font-size: calc(15px + 1vw);
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+
+.User {
+  position: relative;
+  border-bottom: 1px solid black;
+  height: 200px;
+  margin: 0px !important;
+}
+
+.User #firstname {
+  position: absolute;
+  top: 5%;
+  left: 1.5%;
+}
+
+.User #lastname {
+  position: absolute;
+  left: 1.5%;
+  top: 15%;
+}
+
+.User #DOB {
+  display: block;
+  position: absolute;
+  left: 1.5%;
+  top: 58%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  word-wrap: break-word;
+}
+
+.User #gender {
+  position: absolute;
+  top: 70%;
+  left: 1.5%;
+  margin: 0px;
+}
+
+.User #tel {
+  position: absolute;
+  top: 85%;
+  left: 1.5%;
+}
+
+.User #mail {
+  position: absolute;
+  bottom: 1%;
+  right: 2%;
+}
+
+.User span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: calc(8px + 1vw);
+  font-weight: 600;
+}
+
+.User #dateOfInsc {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  margin: 0px;
+}
+
+.User .deletebutton {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+
+.User .deletebutton:hover {
+  -webkit-box-shadow: 0px 0px 8px 4px #e731318e;
+  box-shadow: 0px 0px 8px 4px #e731318e;
+  cursor: pointer;
+}
+
+.ride {
+  position: relative;
+  border-bottom: 1px solid black;
+  height: 200px;
+  margin: 0px !important;
+}
+
+.ride #to {
+  position: absolute;
+  top: 85%;
+  left: 1.5%;
+}
+
+.ride #vehicle {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+}
+
+.ride #info {
+  display: block;
+  position: absolute;
+  left: -29.5%;
+  top: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  word-wrap: break-word;
+}
+
+.ride #locations {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  margin: 0px;
+}
+
+.ride #time {
+  position: absolute;
+  bottom: 1%;
+  left: 2%;
+}
+
+.ride #howManyLeft {
+  position: absolute;
+  bottom: 1%;
+  right: 2%;
+}
+
+.ride span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: calc(8px + 1vw);
+  font-weight: 600;
+}
+
+.ride #icons {
+  position: absolute;
+  right: 0%;
+  top: 1%;
+  margin: 0px;
+}
+
+.ride .deleteridebutton {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+
+.ride .deleteridebutton:hover {
+  -webkit-box-shadow: 0px 0px 8px 4px #e731318e;
+  box-shadow: 0px 0px 8px 4px #e731318e;
+  cursor: pointer;
+}

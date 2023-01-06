@@ -1,0 +1,357 @@
+html {
+  background: url("Images/logbg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  height: 100vh;
+}
+
+#Box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#backPanel {
+  float: left;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+}
+
+#Logo{
+  margin-top: 25px;
+  margin-left: 20px;
+  height: 90px;
+  width: 225px;
+  background: url("images/Logo.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#Description h1 {
+  margin-left: 15px;
+  color: white;
+  text-shadow: 2px 0 rgba(0, 0, 0, 0.767), -2px 0 rgba(0, 0, 0, 0.767), 0 2px rgba(0, 0, 0, 0.767), 0 -2px rgba(0, 0, 0, 0.767), 1px 1px rgba(0, 0, 0, 0.767), -1px -1px rgba(0, 0, 0, 0.767), -1px 1px rgba(0, 0, 0, 0.767), 1px -1px rgba(0, 0, 0, 0.767);
+  font-size: 4.3rem;
+}
+
+#Description p {
+  margin-left: 15px;
+  color: white;
+  text-shadow: 2px 0 rgba(0, 0, 0, 0.767), -2px 0 rgba(0, 0, 0, 0.767), 0 2px rgba(0, 0, 0, 0.767), 0 -2px rgba(0, 0, 0, 0.767), 1px 1px rgba(0, 0, 0, 0.767), -1px -1px rgba(0, 0, 0, 0.767), -1px 1px rgba(0, 0, 0, 0.767), 1px -1px rgba(0, 0, 0, 0.767);
+  font-size: 2rem;
+}
+
+#SignUpFormBox {
+  margin-right: 56px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 27%;
+  height: fit-content;
+  float: right;
+  background: linear-gradient(rgba(255, 255, 255, 0.678),rgb(255, 255, 255)) ;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0.651)));
+  border-radius: 10px;
+}
+
+#SignUpForm {
+  position: relative;
+  padding-left: 45px;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+  width: 70%;
+}
+
+#h1wrap h1 {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border: 0;
+  border-bottom: solid;
+  border-width: 3px;
+  -webkit-border-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 1%, #3494e2 50%, rgba(0, 0, 0, 0) 100%) 0 0 100% 0/0 0 3px 0 stretch;
+  border-image-slice: 1;
+}
+
+#h1wrap {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#SignUpForm_p {
+  font-weight: 200;
+  font-size: 1.15rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0c5fcc;
+  font-weight: 600;
+}
+
+.form_field {
+  width: 100%;
+  border: 0;
+  margin-bottom: 40px;
+  outline: 0;
+  border-bottom: 3px solid black;
+  font-size: 1.5rem;
+  color: black;
+  background: transparent;
+}
+
+.form_field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form_field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form_field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form_field::placeholder {
+  color: transparent;
+}
+
+.form_field:placeholder-shown ~ .form__label {
+  font-size: 1.5rem;
+  cursor: text;
+}
+
+#FN {
+  position: relative;
+  margin: 20px 0px;
+}
+
+#LN {
+  position: relative;
+}
+
+#BD {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#BD label {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#birthday {
+  font-size: 1.6rem;
+}
+
+#MF {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#MFL {
+  font-size: 1.3rem;
+}
+
+.radioLabel {
+  padding: 6px;
+  border-radius: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+  margin: 8px 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.radioLabel:hover, .radioLabel:focus-within {
+  background: rgba(77, 197, 233, 0.1);
+}
+
+.radioLabel input {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: none;
+  border: 0;
+  -webkit-box-shadow: inset 0 0 0 1px #4dc5e9;
+          box-shadow: inset 0 0 0 1px #4dc5e9;
+  -webkit-box-shadow: inset 0 0 0 1.5px #4dc5e9;
+          box-shadow: inset 0 0 0 1.5px #4dc5e9;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: -webkit-box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  transition: -webkit-box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25), -webkit-box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  pointer-events: none;
+}
+
+.radioLabel input:focus {
+  outline: none;
+}
+
+.radioLabel input:checked {
+  -webkit-box-shadow: inset 0 0 0 6px #2992c2;
+          box-shadow: inset 0 0 0 6px #2992c2;
+}
+
+.radioLabel input:checked + span {
+  color: #113599;
+}
+
+.radioLabel span {
+  display: inline-block;
+  line-height: 20px;
+  padding-right: 40px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+#EM {
+  position: relative;
+  margin: 20px 0px;
+}
+
+#pass {
+  position: relative;
+}
+
+#PN {
+  position: relative;
+}
+
+#phone_label {
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#phone {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-bottom: 3px solid black;
+  font-size: 1.5rem;
+  color: black;
+  background: transparent;
+}
+
+#phone:required, #phone:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#phone:focus, #phone:not([value=""]) {
+  border-width: 2px;
+  -o-border-image: linear-gradient(to right, #113599, #3bcaee);
+     border-image: -webkit-gradient(linear, left top, right top, from(#113599), to(#3bcaee));
+     border-image: linear-gradient(to right, #113599, #3bcaee);
+  border-image-slice: 1;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.form_field:focus, .form_field:not([value=""]) {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 2px;
+  -o-border-image: linear-gradient(to right, #113599, #3bcaee);
+     border-image: -webkit-gradient(linear, left top, right top, from(#113599), to(#3bcaee));
+     border-image: linear-gradient(to right, #113599, #3bcaee);
+  border-image-slice: 1;
+}
+
+.form_field:focus ~ .form__label, .form_field:not([value=""]) ~ .form__label {
+  -webkit-transform: translateX(-10px) translateY(-32px);
+          transform: translateX(-10px) translateY(-32px);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #115799;
+}
+
+.form_field:required, .form_field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#ButtonContainer {
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: block;
+  height: 55px;
+  width: 100%;
+}
+
+#SubmitButton {
+  font-size: 1.5rem;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #8bc7e9c5;
+  border-radius: 15px;
+  background-color: #2992c2;
+}
+
+#SubmitButton:hover {
+  -webkit-box-shadow: 1px 1px 25px 10px #319fe78e;
+          box-shadow: 1px 1px 25px 10px #319fe78e;
+}
+
+#SubmitButton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -110%;
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(120deg, transparent, #b9dff89d, transparent);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+#SubmitButton:hover:before {
+  left: 110%;
+}
+
+p.probleme {
+  color: red !important;
+  font-size: 1.2rem;
+}
+@media (max-width: 1000px) {
+  #SignUpFormBox {
+    position: relative !important;
+    left: -10% !important;
+    width: 60%;
+  }
+  #backPanel{
+    display: none;
+  }
+}

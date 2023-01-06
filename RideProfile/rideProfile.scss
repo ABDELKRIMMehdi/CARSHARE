@@ -1,0 +1,357 @@
+*{
+    font-family: 'museo-sans-rounded',sans-serif;
+}
+body{
+    background: url(Road-Trip-image.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0px;
+
+}
+#intelcontainer{
+  position: absolute;
+  left: 5%;
+  width: 85vw;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background:rgba(255, 255, 255, 0.747);
+}
+header{
+    background: linear-gradient(to right, #27affd, rgb(255, 255, 255));
+    width: 100%;
+    color: white;
+    height: 75px;
+    text-align: center;
+    h1{
+    padding-top: 20px;
+    margin: 0px;
+    }
+}
+span{
+  background: none;
+    display: block;
+    font-size: calc(10px + 0.7vw); 
+    font-weight: 500;
+}
+div{
+    border-radius: 3px;
+}
+.title{
+    display: inline !important;
+    font-weight: 700 !important;
+    font-size: calc(10px + 0.7vw) !important;
+}
+#aboutTheDriver{
+  position: relative;
+  left: 5%;
+  background: none !important;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px !important;
+    border-left: 2px solid rgb(45, 162, 240);
+    border-right: 2px solid rgb(45, 162, 240);
+}
+#aboutTheRide{
+  border-radius: 20px !important;
+width: 60%;
+height: 375px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    #place{
+      position: relative;
+      top:15%;
+      background: none !important;
+        margin-top: 15px;
+    }
+    #time{
+      position: relative;
+      top:1%;
+      left: 100%;
+      background: none !important;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    @media (max-width: 1100px) {
+      #time{
+        top:6%;
+        left: 100%;
+      }
+
+     
+    }
+    #vehicle{
+        margin-top: 15px;
+        margin-bottom: 5px;
+        position: relative;
+        top: 2.75%;
+
+    }
+    #details{
+      position: relative;
+      top: 3%;
+
+    }
+    #icons{
+position: relative;
+bottom: -48%;
+    }
+}
+.button{
+    width: 20%;
+    height: 50px;
+    margin: 0px;
+    text-align: center;
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+
+}
+button{
+    border: none;
+    cursor: pointer;
+    outline:none;
+    background: #27affd;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: calc(10px + 0.7vw); 
+    font-weight: 500;
+}
+#fee{
+    position: absolute;
+    bottom: 4%;
+    right: 50%;
+}
+.dropbtn {
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover{
+  -webkit-box-shadow: 0px 0px 8px 4px #e731318e;
+  box-shadow: 0px 0px 8px 4px #e731318e;
+  }
+  .dropbtnCONTACT:hover{
+    -webkit-box-shadow: 0px 0px 8px 4px #31ade78e;
+    box-shadow: 0px 0px 8px 4px #31ade78e;
+    }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: red;
+  }
+  
+  .BANNdropdown {
+    position: absolute;
+    top: 57%;
+    right: 30%;
+    display: inline-block;
+    width: 12%;
+  }
+  @media (max-width: 660px) {
+    .BANNdropdown {
+      width: 30%;
+    }
+  }
+  
+  .dropdown-content {
+    overflow-y : scroll;
+    display: none;
+    margin-top: 0px !important;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    height: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content button {
+    color: white !important;
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    width: 100%;
+    background: red !important;
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+  }
+
+
+  .dropbtnCONTACT {
+    background-color: rgb(37, 146, 248);
+    border-radius: 10px;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .CONTACTdropdown {
+    position: absolute;
+    top: 57%;
+    right: 5%;
+    display: inline-block;
+    width: 20%;
+  }
+  @media (max-width: 660px) {
+    .CONTACTdropdown {
+      width: 40%;
+    }
+  }
+  .dropdown-contentCONTACT {
+    overflow-y : scroll;
+    display: none;
+    margin-top: 0px !important;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    height: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-contentCONTACT button {
+    color: white !important;
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    width: 100%;
+    background: rgb(0, 119, 255) !important;
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .show {
+    display: block;
+  }
+  @media (max-width: 1100px) {
+    .BANNdropdown {
+      right: 18% !important;
+      top: 59%;
+      p{
+        display: none;
+      }
+    }
+    @media (max-width: 1100px) {
+      .CONTACTdropdown {
+  
+        top: 64%;
+  
+      }
+    }
+    #aboutTheDriver{
+      left: 25%;
+    }
+
+  }
+  @media (max-width: 1100px) {
+  .ButtonContainer{
+    width: 65px !important;
+    right: 13% !important;
+    #title{
+      display: none !important;
+    }
+  }
+}
+
+.hover_bkgr_fricc{
+  background:rgba(0,0,0,.4);
+  cursor:pointer;
+  display:none;
+  height:100%;
+  position:fixed;
+  text-align:center;
+  top:0;
+  left: 0%;
+  width:100%;
+  z-index:10000;
+}
+.hover_bkgr_fricc .helper{
+  display:inline-block;
+  height:100%;
+  vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+  background-color: #fff;
+  box-shadow: 10px 10px 60px #555;
+  display: inline-block;
+  height: auto;
+  max-width: 551px;
+  min-height: 100px;
+  vertical-align: middle;
+  width: 60%;
+  position: relative;
+  border-radius: 8px;
+  padding: 15px 5%;
+}
+.popupCloseButton {
+  background-color: #fff;
+  border: 3px solid #999;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 25px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.popupCloseButton:hover {
+  background-color: #ccc;
+}
+.trigger_popup_fricc {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+#ammount{
+  margin-left: 15px;
+  position: relative;
+  left: 58%;
+  input{
+    background: rgba(255, 255, 255, 0.637);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(98, 164, 238) !important;
+    height: 30px;
+  }
+  label{
+    font-weight: 600;
+  }
+}
+@media (max-width: 1200px) {
+  label{
+    position: relative;
+    top: -40px;
+  }
+  input{
+    position: relative;
+    left: -23%;
+  }
+}
+@media (max-width: 500px) {
+  input{
+    position: relative;
+    left: -50% !important;
+  }
+
+}
